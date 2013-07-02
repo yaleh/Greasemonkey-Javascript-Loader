@@ -1,0 +1,29 @@
+{
+  "name": "gmhelper",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.0.1",
+    "jade": "*",
+    "less-middleware": "*"
+  },
+  "scripts": {
+    "start": "python -m SimpleHTTPServer 8080"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.2.x"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.1.1rc6",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.4.0",
+    "grunt-contrib-watch": "~0.1.4",
+    "clean-css": "git://github.com/GoalSmashers/clean-css",
+    "grunt-contrib-cssmin": "git://github.com/gruntjs/grunt-contrib-cssmin",
+    "grunt-contrib-less": "git://github.com/gruntjs/grunt-contrib-less",
+    "grunt-contrib-jade": "git://github.com/gruntjs/grunt-contrib-jade",
+    "sh": "0.0.2",
+    "grunt-contrib-clean": "~0.4.1"
+  }
+}
