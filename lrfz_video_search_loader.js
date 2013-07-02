@@ -4,14 +4,14 @@
 // @description    为豆瓣(douban.com)、时光网(mtime.com)等影评网站的电影增加谷歌视频、土豆、迅雷等搜索。
 // @include        http://*
 // @include        https://*
-// @require http://www.json.org/json2.js
-// @require	http://m.lrfz.com/gmjsloader.js
+// @require        http://www.json.org/json2.js
+// @require	   http://localhost:8080/gmjsloader.js
 // @author         Yale Huang
 // @version        0.2
 // ==/UserScript==
 
 (function(){
-    var debug = false;
+    var debug = true;
     var script_site = debug?"http://localhost:8080":"http://m.lrfz.com";
 
     if(!unsafeWindow.GMJSLoader){
@@ -20,7 +20,7 @@
     unsafeWindow.GMJSLoader.lrfz_video_search={};
     unsafeWindow.GMJSLoader.lrfz_video_search.debug = debug;
 
-    GMJSLoader.loadJS(script_site + "/greasemonkey/lrfz_video_search.js");
-})();
+    GMJSLoader.loadJS(script_site + "/greasemonkey/lrfz_video_search.min.js");
+}).call(this);
 
 // END FILE

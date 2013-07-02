@@ -190,6 +190,6 @@ GMJSLoader.callbackTrigger "jQuery.cookie", ->
   lrfz_video_search = new LRFZVideoSearch
   lrfz_video_search.main()
 
-# if GMJSLoader.lrfz_video_search.debug
-#   @LRFZVideoSearch = LRFZVideoSearch
+if GMJSLoader.lrfz_video_search.debug
+  @LRFZVideoSearch = LRFZVideoSearch
 #GMJSLoader.GM_API.GM_log("LRFZ Video Search is loaded.");
