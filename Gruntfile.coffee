@@ -11,8 +11,15 @@ module.exports = (grunt) ->
         files:
           "greasemonkey/lrfz_video_search.min.js": ["greasemonkey/lrfz_video_search.js"]
           "gmjsloader.min.js": ["gmjsloader.js"]
+    clean: [
+      'greasemonkey/lrfz_video_search.min.js',
+      "greasemonkey/lrfz_video_search.js",
+      "gmjsloader.min.js",
+      "gmjsloader.js"
+      ]
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks "grunt-contrib-uglify"
+  grunt.loadNpmTasks 'grunt-contrib-clean'
   
   grunt.registerTask 'default', ['coffee', 'uglify']

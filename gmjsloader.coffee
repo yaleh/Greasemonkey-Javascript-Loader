@@ -27,8 +27,9 @@ class GMJSLoaderClass
 
   triggerCall: (key) ->
     funcs = callback_funcs[key]
-    for n of funcs
-      funcs[n]()
+    for f in funcs
+      f()
+    return
 
   getParameters: ->
     

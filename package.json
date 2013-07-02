@@ -23,6 +23,7 @@
     "grunt-contrib-cssmin": "git://github.com/gruntjs/grunt-contrib-cssmin",
     "grunt-contrib-less": "git://github.com/gruntjs/grunt-contrib-less",
     "grunt-contrib-jade": "git://github.com/gruntjs/grunt-contrib-jade",
-    "sh": "0.0.2"
+    "sh": "0.0.2",
+    "grunt-contrib-clean": "~0.4.1"
   }
 }
